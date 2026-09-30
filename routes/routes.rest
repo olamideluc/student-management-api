@@ -1,0 +1,73 @@
+### Create Student
+POST http://localhost:3000/students
+Content-Type: application/json
+
+{
+    "firstName": "Emily",
+    "lastName": "Davis",
+    "email": "emily.davis@email.com",
+    "major": "Cybersecurity",
+    "gpa": 3.9,
+    "graduationYear": 2028,
+    "enrollmentStatus": "Active"
+}
+
+### Update Student
+PUT http://localhost:3000/students/6abd147e630c1d4bc5020d4f
+Content-Type: application/json
+
+{
+    "firstName": "Emily",
+    "lastName": "Davis",
+    "email": "emily.updated@email.com",
+    "major": "Cybersecurity",
+    "gpa": 4.0,
+    "graduationYear": 2028,
+    "enrollmentStatus": "Active"
+}
+
+### Delete Student
+DELETE http://localhost:3000/students/6abd147e630c1d4bc5020d4f
+
+### Get all courses
+GET http://localhost:3000/courses
+
+###
+
+### Get single course by ID
+GET http://localhost:3000/courses/PASTE_COURSE_ID_HERE
+
+###
+
+### Create course
+POST http://localhost:3000/courses
+Content-Type: application/json
+
+{
+    "courseCode": "CSE450",
+    "courseName": "Advanced Backend Development",
+    "credits": 4,
+    "instructor": "Dr. Taylor"
+}
+
+###
+
+### Update course
+PUT http://localhost:3000/courses/6abd23c86ac1bee29fa39e5f
+Content-Type: application/json
+
+{
+    "courseCode": "CSE450",
+    "courseName": "Advanced Backend Development",
+    "credits": 5,
+    "instructor": "Prof. Taylor"
+}
+
+###
+
+### Delete course
+DELETE http://localhost:3000/courses/6abd23c86ac1bee29fa39e5f
+
+
+
+
