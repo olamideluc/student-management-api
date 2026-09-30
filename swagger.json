@@ -5,10 +5,10 @@
     "description": "Student and Courses Management API",
     "version": "1.0.0"
   },
-  "host": "localhost:3000",
+  "host": "student-management-api-u0nu.onrender.com",
   "basePath": "/",
   "schemes": [
-    "http"
+    "https"
   ],
   "paths": {
     "/": {
