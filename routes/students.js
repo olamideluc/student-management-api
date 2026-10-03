@@ -1,6 +1,7 @@
 const router = require('express').Router();
 const studentsController = require('../controllers/students');
 const validation = require('../middleware/validate');
+const auth = require('../middleware/auth');
 // #swagger.tags = ['Students']
 
 router.get('/', studentsController.getAllStudents);
@@ -10,6 +11,7 @@ router.get('/:id', studentsController.getSingleStudent);
 // #swagger.tags = ['Students']
 router.post(
     '/',
+    auth.isAuthenticated,
     validation.studentValidationRules,
     studentsController.createStudent
 );
@@ -17,6 +19,7 @@ router.post(
 
 router.put(
     '/:id',
+    auth.isAuthenticated,
     validation.studentValidationRules,
     studentsController.updateStudent
 );

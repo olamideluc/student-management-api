@@ -71,3 +71,16 @@ DELETE http://localhost:3000/courses/6abd23c86ac1bee29fa39e5f
 
 
 
+### Protected Route Test
+POST http://localhost:3000/students
+Content-Type: application/json
+
+{
+    "firstName": "Test",
+    "lastName": "Student",
+    "email": "test@email.com",
+    "major": "Cybersecurity",
+    "gpa": 3.5,
+    "graduationYear": 2027,
+    "enrollmentStatus": "Active"
+}
